@@ -1,393 +1,369 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fito Patria | Full Stack Web Developer</title>
-  <meta name="description"
-    content="Fito Patria, Full Stack Web Developer lulusan S1 Informatika STMIK AMIKOM Surakarta. Membangun aplikasi web dengan Laravel, Django, dan JavaScript.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Fito Patria | Full Stack Web Developer">
-  <meta property="og:description" content="Portofolio project web, pengalaman, dan keahlian Fito Patria.">
-  <meta property="og:image" content="img/logo-FP.png"><!-- GANTI: gambar pratinjau 1200x630 -->
-  <link rel="icon" href="img/logo-FP.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Fito Patria","jobTitle":"Full Stack Web Developer","email":"fitopatria@gmail.com","sameAs":["https://github.com/fpr35","https://linkedin.com/in/fitopatria-5370aa368"]}</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f0f9ff" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Website sedang dalam pemeliharaan. Kami akan segera kembali." />
+
+  <title>Website Sedang Maintenance</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          animation: {
+            float: 'float 5s ease-in-out infinite',
+            spinSlow: 'spin 20s linear infinite',
+            pulseSoft: 'pulse 3s ease-in-out infinite',
+            shimmer: 'shimmer 2.5s ease-in-out infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            shimmer: {
+              '0%, 100%': { opacity: '.5' },
+              '50%': { opacity: '1' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f0f9ff;
+      color: #0c2d4a;
+      overflow-x: hidden;
+    }
+
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(59, 130, 246, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, .055) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+      -webkit-mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, .82);
+      border: 1px solid rgba(147, 197, 253, .45);
+      box-shadow: 0 24px 80px rgba(59, 130, 246, .09);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+        100deg,
+        #2563eb 0%,
+        #38bdf8 55%,
+        #0ea5e9 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .orb {
+      filter: blur(75px);
+      pointer-events: none;
+    }
+
+    .status-dot {
+      box-shadow: 0 0 12px rgba(56, 189, 248, .6);
+    }
+
+    .soft-border {
+      border-color: rgba(147, 197, 253, .4);
+    }
+
+    ::selection {
+      background: #bae6fd;
+      color: #0c2d4a;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 
-<body>
-  <a class="skip" href="#proyek">Langsung ke project</a>
-  <header class="bar">
-    <div class="wrap barin">
-      <a class="brand" href="#top"><img src="img/logo-FP.png" alt="" width="28" height="35">Fito Patria</a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-      <nav id="nav" aria-label="Utama"><a href="#proyek">Project</a><a href="#keahlian">Keahlian</a><a
-          href="#pengalaman">Pengalaman</a><a href="#pendidikan">Pendidikan</a><a href="#kontak">Kontak</a></nav>
-    </div>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <canvas id="bg" aria-hidden="true"></canvas>
-      <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <p class="role">Full Stack Web Developer</p>
-            <h1>Fito Patria</h1>
-            <p class="lead">Logika sebagai fondasi. Kode sebagai bahasa. Solusi sebagai tujuan.</p>
-            <p class="cta"><a class="btn primary" href="#proyek">Lihat project</a><a class="btn"
-                href="files/CV_Fito_Patria_ID.pdf" download>Unduh CV</a></p>
-            <p class="links"><a href="https://github.com/fpr35" target="_blank" rel="noopener">GitHub</a><a
-                href="https://linkedin.com/in/fitopatria-5370aa368" target="_blank" rel="noopener">LinkedIn</a><a
-                href="mailto:fitopatria@gmail.com">fitopatria@gmail.com</a></p>
-          </div>
-          <figure class="photo"><img src="img/foto.jpeg" alt="Foto Fito Patria" width="400" height="400">
-          </figure>
+<body class="min-h-screen font-sans antialiased">
+
+  <!-- Background Decoration -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="grid-bg absolute inset-0"></div>
+
+    <div class="orb absolute -left-32 top-0 h-80 w-80 rounded-full bg-sky-300/40"></div>
+    <div class="orb absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-blue-300/30"></div>
+    <div class="orb absolute bottom-0 left-1/4 h-80 w-80 rounded-full bg-cyan-200/40"></div>
+  </div>
+
+  <main class="relative flex min-h-screen flex-col px-5 sm:px-8">
+
+    <!-- Header -->
+    <header class="mx-auto flex w-full max-w-6xl items-center justify-between py-6 sm:py-8">
+
+      <a href="#" class="flex items-center gap-3" aria-label="Website">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl border border-sky-200 bg-white/80 shadow-sm shadow-sky-100">
+          <svg
+            class="h-6 w-6 text-sky-600"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="M12 3 20 7.5v9L12 21l-8-4.5v-9L12 3Z" stroke-linejoin="round"/>
+            <path d="m8.5 9.5 3.5-2 3.5 2v5l-3.5 2-3.5-2v-5Z" stroke-linejoin="round"/>
+          </svg>
         </div>
-        <ul class="stats">
-          <li><b>3,88</b>IPK S1 Informatika</li>
-          <li><b>8</b>Project web</li>
-          <li><b>3</b>Pengalaman kerja</li>
-          <li><b>2</b>Penghargaan</li>
-        </ul>
+
+        <!-- Ganti nama website di sini -->
+        <span class="text-sm font-bold tracking-wide text-sky-950 sm:text-base">
+            WEBSITE PORTOFOLIO
+        </span>
+      </a>
+
+      <div class="flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-3 py-2 shadow-sm shadow-sky-100/50">
+        <span class="status-dot h-2 w-2 rounded-full bg-sky-400 animate-pulseSoft"></span>
+        <span class="text-[10px] font-semibold text-sky-700 sm:text-xs">
+          Maintenance Mode
+        </span>
       </div>
-    </section>
 
-    <section class="sec" data-bg="glyph:code">
-      <div class="wrap">
-        <h2>Tentang saya</h2>
-        <p class="prose">Saya merupakan lulusan S1 Informatika STMIK AMIKOM Surakarta dengan IPK 3,88. Saya telah
-          mengembangkan berbagai aplikasi dan solusi berbasis teknologi, mulai dari sistem reservasi dan manajemen
-          bisnis hingga project yang mengeksplorasi penerapan machine learning. Saya juga memiliki pengalaman memimpin
-          tim selama magang serta terlibat dalam riset dan penulisan jurnal ilmiah.
-        </p>
-      </div>
-    </section>
+    </header>
 
-    <section id="proyek" class="sec alt" data-bg="frames">
-      <div class="wrap">
-        <h2>Project</h2>
-        <!-- GANTI span di tiap .shot dengan <img src="img/projects/nama.webp" alt="..." width="1280" height="720" loading="lazy"> -->
+    <!-- Main Content -->
+    <section class="mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center py-12 text-center sm:py-16">
 
-        <!-- ===== 4 PROYEK UTAMA ===== -->
-        <div class="grid">
+      <!-- Animated Illustration -->
+      <div class="relative mb-9 flex h-48 w-48 items-center justify-center sm:mb-10 sm:h-56 sm:w-56">
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Moodmate</h3>
-              <ul class="tags">
-                <li>HTML</li>
-                <li>JavaScript</li>
-              </ul>
-              <p class="todo">[isi deskripsi singkat Moodmate: apa fungsinya dan untuk siapa]</p>
-              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
-              <p class="plinks"><a class="btn-s" href="https://moodmate-97913.web.app" target="_blank"
-                  rel="noopener">Buka aplikasi</a></p>
-            </div>
-          </article>
+        <!-- Outer Ring -->
+        <div class="absolute inset-0 rounded-full border border-sky-200/80 animate-spinSlow"></div>
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Reservasi Online Janti Park</h3>
-              <ul class="tags">
-                <li>PHP/Laravel</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-              </ul>
-              <p>Website reservasi online untuk wisata Janti Park.</p>
-              <p class="peran"><b>Peran</b> Menangani seluruh siklus project: pengumpulan kebutuhan, analisis pengguna,
-                pembangunan sistem, deployment, dan hosting.</p>
-              <p class="todo">[isi dampak: jumlah reservasi/pengguna, manfaat bagi pengelola]</p>
-              <p class="plinks"><a class="btn-s" href="https://reservasi.jantipark.co.id" target="_blank"
-                  rel="noopener">Buka situs</a></p>
-            </div>
-          </article>
+        <!-- Dashed Ring -->
+        <div class="absolute inset-5 rounded-full border border-dashed border-blue-300/70"></div>
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Cashew Fruit Meter</h3>
-              <ul class="tags">
-                <li>Python</li>
-                <li>Django</li>
-                <li>CNN</li>
-              </ul>
-              <p>Pengecek kematangan jambu mete dari gambar yang diunggah (matang atau belum matang). Akurasi model
-                97,50% pada dataset Kaggle.</p>
-              <p class="peran"><b>Peran</b> Tim 4 orang: fitur machine learning, CRUD, dan seluruh backend.</p>
-              <p class="todo">[isi ukuran dataset dan arsitektur model]</p>
-              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35" target="_blank" rel="noopener">Kode di
-                  GitHub</a><!-- GANTI dengan URL repo yang benar --></p>
-            </div>
-          </article>
+        <!-- Soft Glow -->
+        <div class="absolute inset-8 rounded-full bg-sky-200/50 blur-2xl"></div>
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Manajemen Surat, Enuma Technology</h3>
-              <ul class="tags">
-                <li>PHP/Laravel</li>
-                <li>JavaScript</li>
-              </ul>
-              <p>Website manajemen surat yang dikembangkan saat magang di divisi Software Development. Project bersifat
-                rahasia.</p>
-              <p class="peran"><b>Peran</b> Team lead dan programmer (tim 3 orang): membagi tugas, meninjau kode, dan
-                berkoordinasi dengan UI/UX designer.</p>
-              <p class="todo">[isi hasil umum tanpa data klien: jumlah modul, durasi, manfaat]</p>
-              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
-            </div>
-          </article>
+        <!-- Main Card -->
+        <div class="glass relative flex h-32 w-32 items-center justify-center rounded-[2rem] animate-float sm:h-36 sm:w-36">
+
+          <svg
+            viewBox="0 0 120 120"
+            class="h-24 w-24 sm:h-28 sm:w-28"
+            fill="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="gearGradient" x1="20" y1="15" x2="100" y2="105" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#60A5FA"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+              <linearGradient id="checkGradient" x1="75" y1="80" x2="105" y2="105" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#38BDF8"/>
+                <stop offset="1" stop-color="#0284C7"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Gear -->
+            <g stroke="url(#gearGradient)" stroke-width="2.5" stroke-linejoin="round">
+              <path d="M54 15h12l3 9a37 37 0 0 1 8 3l8-5 9 9-5 8a37 37 0 0 1 3 8l9 3v12l-9 3a37 37 0 0 1-3 8l5 8-9 9-8-5a37 37 0 0 1-8 3l-3 9H54l-3-9a37 37 0 0 1-8-3l-8 5-9-9 5-8a37 37 0 0 1-3-8l-9-3V50l9-3a37 37 0 0 1 3-8l-5-8 9-9 8 5a37 37 0 0 1 8-3l3-9Z"/>
+              <circle cx="60" cy="56" r="19"/>
+              <circle cx="60" cy="56" r="7" fill="#DBF4FF"/>
+            </g>
+
+            <!-- Checkmark -->
+            <circle cx="88" cy="91" r="17" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1.5"/>
+            <path d="m80 91 5 5 11-12" stroke="url(#checkGradient)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
 
         </div>
 
-        <!-- ===== PROYEK LAINNYA (tersembunyi) ===== -->
-        <div class="grid grid-more" id="more-projects" hidden>
+        <!-- Floating Dots -->
+        <span class="absolute right-3 top-7 h-3 w-3 rounded-full bg-cyan-300 shadow-lg shadow-cyan-200 animate-pulseSoft"></span>
+        <span class="absolute bottom-8 left-3 h-2.5 w-2.5 rounded-full bg-blue-400"></span>
+        <span class="absolute right-7 bottom-4 h-2 w-2 rounded-full bg-sky-200"></span>
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Aplikasi Laporan Keuangan, Enuma Technology</h3>
-              <ul class="tags">
-                <li>PHP/Laravel</li>
-                <li>JavaScript</li>
-              </ul>
-              <p>Aplikasi web untuk mengelola pelaporan keuangan perusahaan secara otomatis. Cukup mencatat transaksi,
-                aplikasi langsung membuat laporan dinamis dengan filter tanggal dan dashboard visual real-time.</p>
-              <p class="peran"><b>Sorotan</b> Waktu pembuatan laporan bulanan turun dari 8 jam menjadi kurang dari 5
-                detik.</p>
-              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
-              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
+      </div>
+
+      <!-- Small Label -->
+      <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-4 py-2 shadow-sm shadow-sky-100/50">
+        <svg
+          class="h-4 w-4 text-sky-600"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 2"/>
+        </svg>
+
+        <span class="text-xs font-semibold tracking-wider text-sky-700 sm:text-sm">
+          WE'LL BE BACK SOON
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-sky-950 sm:text-5xl md:text-6xl">
+        Sesuatu yang lebih baik
+        <span class="gradient-text mt-2 block">
+          sedang dipersiapkan.
+        </span>
+      </h1>
+
+      <!-- Description -->
+      <p class="mt-6 max-w-xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
+        Kami sedang melakukan pemeliharaan dan peningkatan sistem
+        untuk memberikan pengalaman yang lebih baik kepada Anda.
+        Website akan kembali online setelah proses selesai.
+      </p>
+
+      <!-- Status Card -->
+      <div class="glass mt-10 w-full max-w-md rounded-2xl p-5 text-left sm:p-6">
+
+        <div class="flex items-center justify-between gap-3">
+
+          <div class="flex min-w-0 items-center gap-3">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-sky-100 bg-sky-50">
+              <svg
+                class="h-5 w-5 text-sky-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4L14 13l-3-3 3.7-3.7Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-          </article>
 
-          <article class="card">
-            <figure class="shot"><span>Screenshot 1280×720</span></figure>
-            <div class="body">
-              <h3>Sistem Manajemen Inventaris, Enuma Technology</h3>
-              <ul class="tags">
-                <li>PHP/Laravel</li>
-                <li>JavaScript</li>
-              </ul>
-              <p>Aplikasi web untuk mengelola inventaris komponen elektronik secara otomatis. Barang disusun dalam empat
-                tingkat hierarki (Kategori, Seksi, Kotak, Item) dengan pencarian global dan pemantauan stok real-time.
+            <div class="min-w-0">
+              <p class="text-sm font-semibold text-sky-950">
+                Sedang dalam pemeliharaan
               </p>
-              <p class="peran"><b>Sorotan</b> Komponen apa pun bisa ditemukan dalam waktu kurang dari satu menit.</p>
-              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
-              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
+              <p class="mt-1 text-xs text-slate-500">
+                Maintenance in progress
+              </p>
             </div>
-          </article>
+          </div>
 
-          <article class="card">
-            <figure class="shot"><img
-                src="https://raw.githubusercontent.com/fpr35/Sistem-Maintenance-Hotel/main/docs/screenshots/admin-laporan.png"
-                alt="Halaman admin Sistem Maintenance Hotel menampilkan data laporan kerusakan" width="1280"
-                height="720" loading="lazy"></figure>
-            <div class="body">
-              <h3>Sistem Maintenance Hotel</h3>
-              <ul class="tags">
-                <li>PHP/Laravel 10</li>
-                <li>MySQL</li>
-                <li>Tailwind CSS</li>
-                <li>PHPUnit</li>
-              </ul>
-              <p>Aplikasi pengelolaan laporan kerusakan fasilitas hotel, dari pelaporan oleh tamu atau pegawai,
-                verifikasi admin, pembelian jasa ke mitra vendor, sampai rekap PDF.</p>
-              <p class="peran"><b>Sorotan</b> Empat peran pengguna, 52 feature test, transaksi database, dan rate
-                limiting pada login.</p>
-              <p class="peran"><b>Peran</b> <span class="todo">[konfirmasi: proyek individu atau tim?]</span></p>
-              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35/Sistem-Maintenance-Hotel"
-                  target="_blank" rel="noopener">Kode di GitHub</a></p>
-            </div>
-          </article>
+          <span class="shrink-0 rounded-full border border-sky-200 bg-sky-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-sky-700">
+            Ongoing
+          </span>
 
-          <article class="card">
-            <figure class="shot"><img
-                src="https://raw.githubusercontent.com/fpr35/Sistem-Reservasi-Restoran/main/docs/screenshots/admin-dashboard.png"
-                alt="Dashboard admin Sistem Reservasi Restoran" width="1280" height="720" loading="lazy"></figure>
-            <div class="body">
-              <h3>Sistem Reservasi Restoran</h3>
-              <ul class="tags">
-                <li>PHP/Laravel 12</li>
-                <li>MySQL</li>
-                <li>Tailwind CSS v4</li>
-                <li>Metode SAW</li>
-              </ul>
-              <p>Website reservasi restoran dengan rekomendasi area otomatis berdasarkan jumlah rombongan, pemilihan
-                menu, unggah bukti pembayaran, dan laporan PDF.</p>
-              <p class="peran"><b>Sorotan</b> Algoritma SAW dengan bobot kriteria yang bisa diatur admin, dihitung di
-                server, dengan hak akses Pelanggan, Admin, dan Owner.</p>
-              <p class="peran"><b>Peran</b> <span class="todo">[konfirmasi: proyek individu atau tim?]</span></p>
-              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35/Sistem-Reservasi-Restoran"
-                  target="_blank" rel="noopener">Kode di GitHub</a></p>
-            </div>
-          </article>
-
-          <p class="more">Project lainnya ada di <a href="https://github.com/fpr35" target="_blank"
-              rel="noopener">github.com/fpr35</a>.</p>
         </div>
 
-        <!-- ===== TOMBOL ===== -->
-        <p class="more-wrap">
-          <button class="btn-more" id="toggle-projects" type="button" aria-expanded="false"
-            aria-controls="more-projects"><span>Lihat semua project</span></button>
+        <!-- Decorative Progress Bar -->
+        <div class="mt-5 h-1.5 overflow-hidden rounded-full bg-sky-100">
+          <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-300 animate-pulseSoft"></div>
+        </div>
+
+        <p class="mt-3 text-xs leading-5 text-slate-500">
+          Terima kasih atas kesabaran dan pengertian Anda.
         </p>
 
       </div>
+
+      <!-- Contact Button -->
+      <!-- Ganti email di bawah dengan email kamu -->
+      <a
+        href="mailto:fitopatria@gmail.com"
+        class="mt-7 inline-flex items-center gap-2 rounded-xl border border-sky-200 bg-white/80 px-5 py-3 text-sm font-semibold text-sky-700 shadow-sm shadow-sky-100/50 transition duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-sky-50"
+      >
+        <svg
+          class="h-4 w-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          aria-hidden="true"
+        >
+          <rect x="3" y="5" width="18" height="14" rx="3"/>
+          <path d="m4 7 8 6 8-6"/>
+        </svg>
+
+        Hubungi Kami
+      </a>
+
+      <p class="mt-5 text-xs text-slate-400">
+        Kami akan kembali secepat mungkin.
+      </p>
+
     </section>
 
-    <section id="keahlian" class="sec" data-bg="hex">
-      <div class="wrap">
-        <h2>Keahlian</h2>
-        <div class="skills">
-          <div class="srow">
-            <h3>Web</h3>
-            <ul class="tags">
-              <li>PHP/Laravel</li>
-              <li>Python/Django</li>
-              <li>JavaScript</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>REST API</li>
-            </ul>
-          </div>
-          <div class="srow">
-            <h3>Basis data</h3>
-            <ul class="tags">
-              <li>MySQL</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="srow">
-            <h3>Perancangan</h3>
-            <ul class="tags">
-              <li>UML</li>
-              <li>ERD</li>
-              <li>Flowchart</li>
-              <li>SDLC</li>
-            </ul>
-          </div>
-          <div class="srow">
-            <h3>AI/ML</h3>
-            <ul class="tags">
-              <li>Python</li>
-              <li>CNN</li>
-            </ul>
-          </div>
-          <div class="srow">
-            <h3>Alat</h3>
-            <ul class="tags">
-              <li>Git & GitHub</li>
-              <li>VS Code</li>
-              <li>Figma</li>
-              <li>draw.io</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer class="mx-auto w-full max-w-6xl border-t border-sky-200/70 py-6">
 
-    <section id="pengalaman" class="sec alt" data-bg="waves">
-      <div class="wrap">
-        <h2>Pengalaman</h2>
-        <ol class="timeline">
-          <li>
-            <p class="when">Jul 2025 – sekarang</p>
-            <h3>Software Engineer (Freelance), MersifLab</h3>
-            <p>Mengembangkan aplikasi web sesuai kebutuhan proyek dan berkolaborasi dengan tim melalui GitHub.</p>
-          </li>
-          <li>
-            <p class="when">Jul 2024 – Sep 2026</p>
-            <h3>Research Assistant</h3>
-            <p>Studi literatur, pengumpulan dataset, eksplorasi model machine learning, dan penulisan jurnal.</p>
-          </li>
-          <li>
-            <p class="when">Apr 2025 – Jan 2026</p>
-            <h3>Magang Software Development, Enuma Technology</h3>
-            <p>Team lead sekaligus programmer: membagi tugas, meninjau kode, dan berkoordinasi dengan anggota tim.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+      <div class="flex flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
 
-    <section id="pendidikan" class="sec" data-bg="glyph:math">
-      <div class="wrap">
-        <h2>Pendidikan dan penghargaan</h2>
-        <div class="cols">
-          <div class="panel">
-            <h3>S1 Informatika, STMIK AMIKOM Surakarta</h3>
-            <p>2022 – 2026, IPK 3,88</p>
-            <h3>Penghargaan</h3>
-            <p>Best Article, SEMNASA 2024.</p>
-            <p>Wisudawan Best of the Best, S1 Informatika (2026).</p>
-          </div>
-          <div class="panel">
-            <h3>Sertifikasi dan kegiatan</h3>
-            <p>Workshop NVIDIA: Fundamentals of Deep Learning.</p>
-            <p>Mentor, Pelatihan Fundamentals of Laravel.</p>
-            <p>Applied Microsoft Office, Trust Training Partners (2025).</p>
-            <h3>Bahasa</h3>
-            <p>Indonesia, Inggris (intermediate)</p>
-          </div>
-        </div>
+        <p class="text-xs text-slate-500">
+          &copy; <span id="year"></span>All rights reserved.
+        </p>
+
+        <p class="flex items-center gap-1.5 text-xs text-slate-500">
+          Made with
+          <svg
+            class="h-3.5 w-3.5 text-sky-500"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 21.35 10.55 20C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.51L12 21.35Z"/>
+          </svg>
+          in blue
+        </p>
+
       </div>
-    </section>
+
+    </footer>
+
   </main>
 
-  <footer id="kontak" data-bg="ripples">
-    <div class="wrap">
-      <div class="cta-box">
-        <div>
-          <h2>Punya project atau peluang menarik?</h2>
-          <p>Saya terbuka untuk kesempatan berkarier sebagai Full Stack Web Developer maupun kolaborasi dalam pengembangan aplikasi web. Hubungi saya melalui email atau LinkedIn untuk memulai percakapan.</p>
-        </div>
-        <p class="cta-btns">
-          <a class="btn light" href="mailto:fitopatria@gmail.com">Kirim email</a>
-          <a class="btn ghost" href="files/CV_Fito_Patria_ID.pdf" download>Unduh CV</a>
-        </p>
-      </div>
+  <!-- Current Year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
-      <div class="foot-grid">
-        <div>
-          <a class="brand" href="#top"><img src="img/logo-FP.png" alt="" width="28" height="35">Fito Patria</a>
-          <p>Full Stack Web Developer. Lulusan S1 Informatika STMIK AMIKOM Surakarta.</p>
-        </div>
-        <div>
-          <h3>Navigasi</h3>
-          <ul>
-            <li><a href="#proyek">Project</a></li>
-            <li><a href="#keahlian">Keahlian</a></li>
-            <li><a href="#pengalaman">Pengalaman</a></li>
-            <li><a href="#pendidikan">Pendidikan</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Kontak</h3>
-          <ul>
-            <li><a href="mailto:fitopatria@gmail.com">fitopatria@gmail.com</a></li>
-            <li><a href="https://github.com/fpr35" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/fitopatria-5370aa368" target="_blank" rel="noopener">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="foot-bot">
-        <p>© 2026 Fito Patria</p>
-        <a class="to-top" href="#top">
-          <span>Kembali ke atas</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <canvas id="trail" aria-hidden="true"></canvas>
-  <script src="js/script.js"></script>
 </body>
-
 </html>

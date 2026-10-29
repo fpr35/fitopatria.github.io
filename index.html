@@ -1,164 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo-FP.png">
-    <title>Fito Patria</title>
+<html lang="id">
 
-    <div class="container-lg text-info header">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo-FP.png" ><b style="font-size: 30px; margin-left: 2%">FITO PATRIA</b>
-        </a>
-        <nav class="navbar navbar-expand-fluid fixed-top navbar-dark" style=
-        "display: inline-block; ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#ContentNavbar" style="background-color: #0d6dfdea; border: none;">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="ContentNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
-                        <li><hr class="dropdown-divider"></li>
-                        <a class="nav-link active" aria-current="page" href="#program">Programming</a>
-                        <li><hr class="dropdown-divider"></li>
-                        <a class="nav-link active" aria-current="page" href="#design">Graphics Design</a>
-                        <li><hr class="dropdown-divider"></li>
-                        <a class="nav-link active" aria-current="page" href="#editing">Video Editing</a>
-                        <li><hr class="dropdown-divider"></li>
-                        <a class="nav-link active" aria-current="page" href="#photo">Photography</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fito Patria | Full Stack Web Developer</title>
+  <meta name="description"
+    content="Fito Patria, Full Stack Web Developer lulusan S1 Informatika STMIK AMIKOM Surakarta. Membangun aplikasi web dengan Laravel, Django, dan JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fito Patria | Full Stack Web Developer">
+  <meta property="og:description" content="Portofolio project web, pengalaman, dan keahlian Fito Patria.">
+  <meta property="og:image" content="img/logo-FP.png"><!-- GANTI: gambar pratinjau 1200x630 -->
+  <link rel="icon" href="img/logo-FP.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Fito Patria","jobTitle":"Full Stack Web Developer","email":"fitopatria@gmail.com","sameAs":["https://github.com/fpr35","https://linkedin.com/in/fitopatria-5370aa368"]}</script>
 </head>
+
 <body>
-    <div class="container-fluid text-light div1" id="about">
-        <div class="row">
-            <div class="col-lg-7 div1_kiri" align="justify">
-                <h1 style="font-size: 68px;" align="left"><b>A Bit About
-                    <a href="resume.html" target="_blank"><span style="background-color: white; color: #0d6efd; font-size: 60px; padding-right: 0.7%;"
-                    onmouseover="mouseOver()" onmouseout="mouseOut()">
-                        <span id="resume" style="font-size: 0px;">Resu</span>Me</span></b></a>
-                </h1><br>
-                <p><span>I am a student who is currently studying S1 Informatics at STMIK AMIKOM Surakarta.
-                     I am interested in things related to programming. I can also do other things such as 
-                     designing, video editing, and photography. <span style="background-color: white; color: #0d6efd; padding-right: 0.4%;border-radius: 3px;">
-                        <br><i><a class="readmore" href="resume.html" target="_blank" >Read more</a></i></span>
-                </span></p>
-            </div>
-            <div class="col-lg-5 div1_kanan">
-                <br><br><br><br><br><br>
-                <p><i>Having assignment problems about web design/programming? 
-                <a href="https://wa.me/+6285879720520">Contact me</a></i></p>
-            </div>
-        </div>
-        <div class="moving_text_right">
-           <h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1>
-        </div>
-        <div class="moving_text_left">
-            <h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1><h1><i>Welcome</i></h1>
-         </div>
+  <a class="skip" href="#proyek">Langsung ke project</a>
+  <header class="bar">
+    <div class="wrap barin">
+      <a class="brand" href="#top"><img src="img/logo-FP.png" alt="" width="28" height="35">Fito Patria</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Utama"><a href="#proyek">Project</a><a href="#keahlian">Keahlian</a><a
+          href="#pengalaman">Pengalaman</a><a href="#pendidikan">Pendidikan</a><a href="#kontak">Kontak</a></nav>
     </div>
-    <div class="container-fluid div_cap" align="center">
-        <h1 class="hidden"><b>Capabilities</b></h1>
-    </div>
-    <div class="container-fluid div_program" id="program">
-        <h1 class="hidden" align="center" style="margin-bottom: 1.5%;"><b>Programming</b></h1>
-        <p class="hidden" align="justify" style="font-size: x-large;">
-            I love things related to programming, especially <span style="color: #70fbd1;"><b>Web Programming</b></span>.
-            I can make UI/UX of a website to its system. Below are some of the programming languages I am good at :
+  </header>
+  <main id="top">
+    <section class="hero">
+      <canvas id="bg" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="role">Full Stack Web Developer</p>
+            <h1>Fito Patria</h1>
+            <p class="lead">Logika sebagai fondasi. Kode sebagai bahasa. Solusi sebagai tujuan.</p>
+            <p class="cta"><a class="btn primary" href="#proyek">Lihat project</a><a class="btn"
+                href="files/CV_Fito_Patria_ID.pdf" download>Unduh CV</a></p>
+            <p class="links"><a href="https://github.com/fpr35" target="_blank" rel="noopener">GitHub</a><a
+                href="https://linkedin.com/in/fitopatria-5370aa368" target="_blank" rel="noopener">LinkedIn</a><a
+                href="mailto:fitopatria@gmail.com">fitopatria@gmail.com</a></p>
+          </div>
+          <figure class="photo"><img src="img/foto.jpeg" alt="Foto Fito Patria" width="400" height="400">
+          </figure>
+        </div>
+        <ul class="stats">
+          <li><b>3,88</b>IPK S1 Informatika</li>
+          <li><b>8</b>Project web</li>
+          <li><b>3</b>Pengalaman kerja</li>
+          <li><b>2</b>Penghargaan</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" data-bg="glyph:code">
+      <div class="wrap">
+        <h2>Tentang saya</h2>
+        <p class="prose">Saya merupakan lulusan S1 Informatika STMIK AMIKOM Surakarta dengan IPK 3,88. Saya telah
+          mengembangkan berbagai aplikasi dan solusi berbasis teknologi, mulai dari sistem reservasi dan manajemen
+          bisnis hingga project yang mengeksplorasi penerapan machine learning. Saya juga memiliki pengalaman memimpin
+          tim selama magang serta terlibat dalam riset dan penulisan jurnal ilmiah.
         </p>
-        <div align="center" class="row g-2" style="padding-top: 2%;padding-bottom: 4%;">
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/php-logo.png" >
+      </div>
+    </section>
+
+    <section id="proyek" class="sec alt" data-bg="frames">
+      <div class="wrap">
+        <h2>Project</h2>
+        <!-- GANTI span di tiap .shot dengan <img src="img/projects/nama.webp" alt="..." width="1280" height="720" loading="lazy"> -->
+
+        <!-- ===== 4 PROYEK UTAMA ===== -->
+        <div class="grid">
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Moodmate</h3>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>JavaScript</li>
+              </ul>
+              <p class="todo">[isi deskripsi singkat Moodmate: apa fungsinya dan untuk siapa]</p>
+              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
+              <p class="plinks"><a class="btn-s" href="https://moodmate-97913.web.app" target="_blank"
+                  rel="noopener">Buka aplikasi</a></p>
             </div>
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/css-logo.png" >
+          </article>
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Reservasi Online Janti Park</h3>
+              <ul class="tags">
+                <li>PHP/Laravel</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+              </ul>
+              <p>Website reservasi online untuk wisata Janti Park.</p>
+              <p class="peran"><b>Peran</b> Menangani seluruh siklus project: pengumpulan kebutuhan, analisis pengguna,
+                pembangunan sistem, deployment, dan hosting.</p>
+              <p class="todo">[isi dampak: jumlah reservasi/pengguna, manfaat bagi pengelola]</p>
+              <p class="plinks"><a class="btn-s" href="https://reservasi.jantipark.co.id" target="_blank"
+                  rel="noopener">Buka situs</a></p>
             </div>
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/js-logo.png" >
+          </article>
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Cashew Fruit Meter</h3>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Django</li>
+                <li>CNN</li>
+              </ul>
+              <p>Pengecek kematangan jambu mete dari gambar yang diunggah (matang atau belum matang). Akurasi model
+                97,50% pada dataset Kaggle.</p>
+              <p class="peran"><b>Peran</b> Tim 4 orang: fitur machine learning, CRUD, dan seluruh backend.</p>
+              <p class="todo">[isi ukuran dataset dan arsitektur model]</p>
+              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35" target="_blank" rel="noopener">Kode di
+                  GitHub</a><!-- GANTI dengan URL repo yang benar --></p>
             </div>
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/java-logo.png" >
+          </article>
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Manajemen Surat, Enuma Technology</h3>
+              <ul class="tags">
+                <li>PHP/Laravel</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>Website manajemen surat yang dikembangkan saat magang di divisi Software Development. Project bersifat
+                rahasia.</p>
+              <p class="peran"><b>Peran</b> Team lead dan programmer (tim 3 orang): membagi tugas, meninjau kode, dan
+                berkoordinasi dengan UI/UX designer.</p>
+              <p class="todo">[isi hasil umum tanpa data klien: jumlah modul, durasi, manfaat]</p>
+              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
             </div>
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/python-logo.png" >
-            </div>
-            <div class="col-6 col-lg-4 logo_program hidden">
-                <img class="w-50" src="img/sql-logo.png" >
-            </div>
+          </article>
+
         </div>
-    </div>
-    <div class="container-fluid div_design" id="design">
-        <h1 class="hidden" align="center" style="margin-bottom: 1.5%;"><b>Graphics Design</b></h1>
-        <p class="hidden" align="justify" style="font-size: x-large;">
-            I can also do some Graphics Design. I can make poster and stuff by using apps like Adobe Illustrator, and CorelDraw.
-            And here is some Graphics Design that i made :
-        </p><br>
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="img_gd1 hidden" src="img/gd-1.jpg"  style="border-radius: 15px;box-shadow: 0px 7px 8px rgba(56, 56, 56, 0.8);">
+
+        <!-- ===== PROYEK LAINNYA (tersembunyi) ===== -->
+        <div class="grid grid-more" id="more-projects" hidden>
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Aplikasi Laporan Keuangan, Enuma Technology</h3>
+              <ul class="tags">
+                <li>PHP/Laravel</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>Aplikasi web untuk mengelola pelaporan keuangan perusahaan secara otomatis. Cukup mencatat transaksi,
+                aplikasi langsung membuat laporan dinamis dengan filter tanggal dan dashboard visual real-time.</p>
+              <p class="peran"><b>Sorotan</b> Waktu pembuatan laporan bulanan turun dari 8 jam menjadi kurang dari 5
+                detik.</p>
+              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
+              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
             </div>
-            <div class="col-lg-4">
-                <img class="img_gd2 hidden" src="img/gd-2.jpg" style="border-radius: 15px;box-shadow: 0px 7px 10px rgba(56, 56, 56, 0.8);">
+          </article>
+
+          <article class="card">
+            <figure class="shot"><span>Screenshot 1280×720</span></figure>
+            <div class="body">
+              <h3>Sistem Manajemen Inventaris, Enuma Technology</h3>
+              <ul class="tags">
+                <li>PHP/Laravel</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>Aplikasi web untuk mengelola inventaris komponen elektronik secara otomatis. Barang disusun dalam empat
+                tingkat hierarki (Kategori, Seksi, Kotak, Item) dengan pencarian global dan pemantauan stok real-time.
+              </p>
+              <p class="peran"><b>Sorotan</b> Komponen apa pun bisa ditemukan dalam waktu kurang dari satu menit.</p>
+              <p class="peran"><b>Peran</b> <span class="todo">[isi peran Anda]</span></p>
+              <p class="plinks"><span class="muted">Kode tidak dipublikasikan</span></p>
             </div>
-            <div class="col-lg-4">
-                <img class="img_gd3 hidden" src="img/gd-3.jpg" style="border-radius: 15px;box-shadow: 0px 7px 10px rgba(56, 56, 56, 0.8);">
+          </article>
+
+          <article class="card">
+            <figure class="shot"><img
+                src="https://raw.githubusercontent.com/fpr35/Sistem-Maintenance-Hotel/main/docs/screenshots/admin-laporan.png"
+                alt="Halaman admin Sistem Maintenance Hotel menampilkan data laporan kerusakan" width="1280"
+                height="720" loading="lazy"></figure>
+            <div class="body">
+              <h3>Sistem Maintenance Hotel</h3>
+              <ul class="tags">
+                <li>PHP/Laravel 10</li>
+                <li>MySQL</li>
+                <li>Tailwind CSS</li>
+                <li>PHPUnit</li>
+              </ul>
+              <p>Aplikasi pengelolaan laporan kerusakan fasilitas hotel, dari pelaporan oleh tamu atau pegawai,
+                verifikasi admin, pembelian jasa ke mitra vendor, sampai rekap PDF.</p>
+              <p class="peran"><b>Sorotan</b> Empat peran pengguna, 52 feature test, transaksi database, dan rate
+                limiting pada login.</p>
+              <p class="peran"><b>Peran</b> <span class="todo">[konfirmasi: proyek individu atau tim?]</span></p>
+              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35/Sistem-Maintenance-Hotel"
+                  target="_blank" rel="noopener">Kode di GitHub</a></p>
             </div>
+          </article>
+
+          <article class="card">
+            <figure class="shot"><img
+                src="https://raw.githubusercontent.com/fpr35/Sistem-Reservasi-Restoran/main/docs/screenshots/admin-dashboard.png"
+                alt="Dashboard admin Sistem Reservasi Restoran" width="1280" height="720" loading="lazy"></figure>
+            <div class="body">
+              <h3>Sistem Reservasi Restoran</h3>
+              <ul class="tags">
+                <li>PHP/Laravel 12</li>
+                <li>MySQL</li>
+                <li>Tailwind CSS v4</li>
+                <li>Metode SAW</li>
+              </ul>
+              <p>Website reservasi restoran dengan rekomendasi area otomatis berdasarkan jumlah rombongan, pemilihan
+                menu, unggah bukti pembayaran, dan laporan PDF.</p>
+              <p class="peran"><b>Sorotan</b> Algoritma SAW dengan bobot kriteria yang bisa diatur admin, dihitung di
+                server, dengan hak akses Pelanggan, Admin, dan Owner.</p>
+              <p class="peran"><b>Peran</b> <span class="todo">[konfirmasi: proyek individu atau tim?]</span></p>
+              <p class="plinks"><a class="btn-s" href="https://github.com/fpr35/Sistem-Reservasi-Restoran"
+                  target="_blank" rel="noopener">Kode di GitHub</a></p>
+            </div>
+          </article>
+
+          <p class="more">Project lainnya ada di <a href="https://github.com/fpr35" target="_blank"
+              rel="noopener">github.com/fpr35</a>.</p>
         </div>
-    </div>
-    <div class="container-fluid div_vid" id="editing">
-        <div class="row">
-            <div class="col-lg-6" style="padding: 5% 5% 0% 1.2%; ">
-                <h1 class="h1_div_vid hidden" align="left">
-                    <b>Video Editing</b>
-                </h1>
-                <p class="hidden" align="justify" style="font-size: x-large;">
-                    I can also do some litle bit of video editing. And that is one of the example of the video that i edited.
-                </p>
-            </div>
-            <div class="col-lg-6" >
-                <video class="vid hidden" style="border-left: 8px solid #b460c6; border-bottom: 12px solid #0d6efd ;"
-                controls width="100%" src="vid/BTS_RADYA PUSTAKA MUSEUM (GEKAMA 2023).mp4"></video>
-            </div>
+
+        <!-- ===== TOMBOL ===== -->
+        <p class="more-wrap">
+          <button class="btn-more" id="toggle-projects" type="button" aria-expanded="false"
+            aria-controls="more-projects"><span>Lihat semua project</span></button>
+        </p>
+
+      </div>
+    </section>
+
+    <section id="keahlian" class="sec" data-bg="hex">
+      <div class="wrap">
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <div class="srow">
+            <h3>Web</h3>
+            <ul class="tags">
+              <li>PHP/Laravel</li>
+              <li>Python/Django</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+          <div class="srow">
+            <h3>Basis data</h3>
+            <ul class="tags">
+              <li>MySQL</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="srow">
+            <h3>Perancangan</h3>
+            <ul class="tags">
+              <li>UML</li>
+              <li>ERD</li>
+              <li>Flowchart</li>
+              <li>SDLC</li>
+            </ul>
+          </div>
+          <div class="srow">
+            <h3>AI/ML</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>CNN</li>
+            </ul>
+          </div>
+          <div class="srow">
+            <h3>Alat</h3>
+            <ul class="tags">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>draw.io</li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="container-fluid div_photo" id="photo">
-        <h1 class="hidden" align="center"  style="margin-bottom: 1.5%;"><b>Photography</b></h1>
-        <p class="hidden" align="justify" style="font-size: x-large;">
-            I do photography for fun. I'm usually using my phone for photography because i don't have a
-            camera device. But, even though I'm only using my phone, I'm sure my photos won't disappoint. 
-            Below are some of picture that i take using my phone.
-        </p><br>
-        <div class="col-lg-12 horizontal_scroll hidden">
-            <div class="col-lg-12 container_div_photo">
-                    <img id="p1" src="img/photo-1.jpg">
-                    <img id="p2" src="img/photo-2.jpg">
-                    <img id="p3" src="img/photo-3.jpg">
-                    <img id="p4" src="img/photo-4.jpg">
-                    <img id="p5" src="img/photo-5.jpg">
-                    <img id="p6" src="img/photo-6.jpg">  
-            </div>
-            <div class="nav_btn" align="center">
-                <a href="#p1"></a>
-                <a href="#p2"></a>
-                <a href="#p3"></a>
-                <a href="#p4"></a>
-                <a href="#p5"></a>
-                <a href="#p6"></a>
-            </div>
+      </div>
+    </section>
+
+    <section id="pengalaman" class="sec alt" data-bg="waves">
+      <div class="wrap">
+        <h2>Pengalaman</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">Jul 2025 – sekarang</p>
+            <h3>Software Engineer (Freelance), MersifLab</h3>
+            <p>Mengembangkan aplikasi web sesuai kebutuhan proyek dan berkolaborasi dengan tim melalui GitHub.</p>
+          </li>
+          <li>
+            <p class="when">Jul 2024 – Sep 2026</p>
+            <h3>Research Assistant</h3>
+            <p>Studi literatur, pengumpulan dataset, eksplorasi model machine learning, dan penulisan jurnal.</p>
+          </li>
+          <li>
+            <p class="when">Apr 2025 – Jan 2026</p>
+            <h3>Magang Software Development, Enuma Technology</h3>
+            <p>Team lead sekaligus programmer: membagi tugas, meninjau kode, dan berkoordinasi dengan anggota tim.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pendidikan" class="sec" data-bg="glyph:math">
+      <div class="wrap">
+        <h2>Pendidikan dan penghargaan</h2>
+        <div class="cols">
+          <div class="panel">
+            <h3>S1 Informatika, STMIK AMIKOM Surakarta</h3>
+            <p>2022 – 2026, IPK 3,88</p>
+            <h3>Penghargaan</h3>
+            <p>Best Article, SEMNASA 2024.</p>
+            <p>Wisudawan Best of the Best, S1 Informatika (2026).</p>
+          </div>
+          <div class="panel">
+            <h3>Sertifikasi dan kegiatan</h3>
+            <p>Workshop NVIDIA: Fundamentals of Deep Learning.</p>
+            <p>Mentor, Pelatihan Fundamentals of Laravel.</p>
+            <p>Applied Microsoft Office, Trust Training Partners (2025).</p>
+            <h3>Bahasa</h3>
+            <p>Indonesia, Inggris (intermediate)</p>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak" data-bg="ripples">
+    <div class="wrap">
+      <div class="cta-box">
+        <div>
+          <h2>Punya project atau peluang menarik?</h2>
+          <p>Saya terbuka untuk kesempatan berkarier sebagai Full Stack Web Developer maupun kolaborasi dalam pengembangan aplikasi web. Hubungi saya melalui email atau LinkedIn untuk memulai percakapan.</p>
+        </div>
+        <p class="cta-btns">
+          <a class="btn light" href="mailto:fitopatria@gmail.com">Kirim email</a>
+          <a class="btn ghost" href="files/CV_Fito_Patria_ID.pdf" download>Unduh CV</a>
+        </p>
+      </div>
+
+      <div class="foot-grid">
+        <div>
+          <a class="brand" href="#top"><img src="img/logo-FP.png" alt="" width="28" height="35">Fito Patria</a>
+          <p>Full Stack Web Developer. Lulusan S1 Informatika STMIK AMIKOM Surakarta.</p>
+        </div>
+        <div>
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="#proyek">Project</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Kontak</h3>
+          <ul>
+            <li><a href="mailto:fitopatria@gmail.com">fitopatria@gmail.com</a></li>
+            <li><a href="https://github.com/fpr35" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/fitopatria-5370aa368" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bot">
+        <p>© 2026 Fito Patria</p>
+        <a class="to-top" href="#top">
+          <span>Kembali ke atas</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
+      </div>
     </div>
+  </footer>
+
+  <canvas id="trail" aria-hidden="true"></canvas>
+  <script src="js/script.js"></script>
 </body>
-<footer class="container-fluid col-12 text-white" style="padding:1%; ">
-    <span class="hidden" style="font-size: larger;">&copy; Fito Patria 2024</span> 
-<!--     <a class="navbar-brand" href="https://github.com/fpr35" target="_blank" ><img src="img/icone-github-bw.png" width="60rem"></a> -->
-</footer>
-<script src="js/script.js"></script>
+
 </html>
